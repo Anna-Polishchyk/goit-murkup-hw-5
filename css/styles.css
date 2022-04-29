@@ -66,7 +66,6 @@ h3 {
 
 /* Site navigation */
 .header {
-    position: relative;
     border-bottom: 1px solid #ECECEC;
 }
 .header .container {
@@ -95,6 +94,7 @@ h3 {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    position: relative;
 }
 .menu-item {
     margin-right: 50px;
@@ -108,12 +108,15 @@ h3 {
     color: var(--accent-color);
     text-decoration: none;
 }
-.menu-item .current::after {
+.menu-link {
+    position: relative;
+}
+.menu .current::after {
     position: absolute;
-    bottom: 0;
     content: "";
+    top: 45px;
     background-color: var(--accent-color);
-    min-width: 48px;
+    width: 100%;
     height: 4px;
     border-radius: 2px;
 }
