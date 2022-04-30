@@ -640,7 +640,7 @@ h3 {
     overflow: hidden;
 }
 
-.overflow-box:hover .overlay {
+.set-item:hover .overlay {
   transform: translatex(0);
 }
 
